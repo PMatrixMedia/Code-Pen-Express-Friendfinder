@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Friend Finder</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- JAVASCRIPT AND JQUERY -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row header text-center">
+            <!-- header -->
+            <img class="img-responsive icon" src="assets/images/question.png">
+        </div>
+        <div class="card text-center">
+            <div class="card-header">
+                <h1>Complete this Survey</h1>
+                <h2>Tell me all about yourself so that I can help you find a new best friend!</h2>
+            </div>
+        </div>
+        <div class="card-body">
+            <h2>Instructions</h2>
+            <p><b>Please answer all questions before submitting this form.</b> Select the rating which is most applicable to you. A score of 5 indicates that you agree strongly with the statement, which a score of 1 indicates that you disagree strongly with the statement.</p>
+            <form>
+                <div class="divider"></div>
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label for="photo">Photo URL</label>
+                    <input type="text" class="form-control" id="photo" placeholder="http://www.mysite.com/myphoto.jpg">
+                </div>
+                <div class="divider"></div>
+
+                <h3>Survey Questions</h3>
+                <p><b>1. Your mind is always buzzing with unexplored ideas and plans.</b></p>
+                <label class="radio-inline"><input type="radio" name="q1" value="1" checked>1</label>
+                <label class="radio-inline"><input type="radio" name="q1" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q1" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q1" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q1" value="5">5</label>
+                <div class="spacer"></div>
+                <p><b>2. Generally speaking, you rely more on your experience than your imagination.</b></p>
+                <label class="radio-inline"><input type="radio" name="q2" value="1" checked>1</label>
+                <label class="radio-inline"><input type="radio" name="q2" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q2" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q2" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q2" value="5">5</label>
+                <div class="spacer"></div>
+                <p><b>3. You find it easy to stay relaxed and focused even when there is some pressure.</b></p>
+                <label class="radio-inline"><input type="radio" name="q3" value="1" checked>1</label>
+                <label class="radio-inline"><input type="radio" name="q3" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q3" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q3" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q3" value="5">5</label>
+                <div class="spacer"></div>
+                <p><b>4. You rarely do something just out of sheer curiosity.</b></p>
+                <label class="radio-inline"><input type="radio" name="q4" value="1" checked>1</label>
+                <label class="radio-inline"><input type="radio" name="q4" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q4" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q4" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q4" value="5">5</label>
+                <div class="spacer"></div>
+                <p><b>5. People can rarely upset you.</b></p>
+                <label class="radio-inline"><input type="radio" name="q5" value="1" checked>1</label>
+                <label class="radio-inline"><input type="radio" name="q5" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q5" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q5" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q5" value="5">5</label>
+                <div class="spacer"></div>
+                <p><b>6. It is often difficult for you to relate to other people’s feelings.</b></p>
+                <label class="radio-inline"><input type="radio" name="q6" value="1" checked>1</label>
+                <label class="radio-inline"><input type="radio" name="q6" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q6" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q6" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q6" value="5">5</label>
+                <div class="spacer"></div>
+                <p><b>7. In a discussion, truth should be more important than people’s sensitivities.</b></p>
+                <label class="radio-inline"><input type="radio" name="q7" value="1" checked>1</label>
+                <label class="radio-inline"><input type="radio" name="q7" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q7" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q7" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q7" value="5">5</label>
+                <div class="spacer"></div>
+                <p><b>8. You rarely get carried away by fantasies and ideas.</b></p>
+                <label class="radio-inline"><input type="radio" name="q8" value="1" checked>1</label>
+                <label class="radio-inline"><input type="radio" name="q8" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q8" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q8" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q8" value="5">5</label>
+                <div class="spacer"></div>
+                <p><b>9. You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</b></p>
+                <label class="radio-inline"><input type="radio" name="q9" value="1" checked>1</label>
+                <label class="radio-inline"><input type="radio" name="q9" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q9" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q9" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q9" value="5">5</label>
+                <div class="spacer"></div>
+                <p><b>10. You feel more energetic after spending time with a group of people.</b></p>
+                <label class="radio-inline"><input type="radio" name="q10" value="1" checked>1</label>
+                <label class="radio-inline"><input type="radio" name="q10" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q10" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q10" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q10" value="5">5</label>
+            </form>
+            <button type="submit" id="submit">Submit!</button>
+        </div> <!-- survey row -->
+        <div class="card-footer text-muted">
+            <div class="modal fade" id="newfriend" tabindex="-1" role="dialog" aria-labelledby="title">
+                <!-- modal -->
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <!-- content -->
+                        <div class="modal-header">
+                            <!-- header -->
+                            <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                            <h2 class="modal-title" id="title">Your new best friend is...</h2>
+                        </div> <!-- modal-header -->
+                        <div class="modal-body text-center">
+                            <!-- body -->
+                            <h1 id="friendname"></h1>
+                            <img class="img-responsive" id="friendphoto">
+                        </div> <!-- modal-body -->
+                        <div class="modal-footer">
+                            <!-- footer -->
+                            <button class="small" data-dismiss="modal">Close</button>
+                            <a href="/home"><button class="small">Return to Home</button></a>
+                        </div> <!-- modal-footer -->
+                    </div> <!-- modal-content -->
+                </div> <!-- model-dialog -->
+            </div> <!-- modal -->
+            <div class="card text-center">
+                <div class="card-header">
+                    <a href="/api/friends">Friends API</a> | <a href="https://github.com/PMatrixMedia/Code-Pen-Express-Friendfinder.git">GitHub</a></p>
+                </div>
+            </div>
+            </div>
+
+            <script type="text/javascript">
+                // upon clicking the submit button...
+                $("#submit").on("click", function () {
+                    // prevents default event upon submission
+                    event.preventDefault();
+
+                    // stores user input in variable for new friend
+                    var newFriend = {
+                        name: $("#name").val().trim(),
+                        photo: $("#photo").val().trim(),
+                        scores: [
+                            $("input[name='q1']:checked").val(),
+                            $("input[name='q2']:checked").val(),
+                            $("input[name='q3']:checked").val(),
+                            $("input[name='q4']:checked").val(),
+                            $("input[name='q5']:checked").val(),
+                            $("input[name='q6']:checked").val(),
+                            $("input[name='q7']:checked").val(),
+                            $("input[name='q8']:checked").val(),
+                            $("input[name='q9']:checked").val(),
+                            $("input[name='q10']:checked").val()
+                        ]
+                    };
+
+                    if (newFriend.name == "" || newFriend.photo == "") {
+                        // if the user does not enter a name or photo url, display error message
+                        alert("You must complete the survey in order to find a friend!");
+                    } else {
+                        // posts data to database of possible friends
+                        $.post("/api/friends", newFriend, function (data) {
+                            // updates modal contents to display most compatible friend
+                            $("#friendname").text(data.name);
+                            $("#friendphoto").attr("src", data.photo);
+                        });
+
+                        // shows modal
+                        $("#newfriend").modal("show");
+                    }
+                });
+            </script>
+</body>
+</html>
