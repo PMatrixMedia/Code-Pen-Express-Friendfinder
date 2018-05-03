@@ -29,19 +29,22 @@
                 <h2>Tell me all about yourself so that I can help you find a new best friend!</h2>
             </div>
         </div>
+	
         <div class="card-body">
             <h2>Instructions</h2>
             <p><b>Please answer all questions before submitting this form.</b> Select the rating which is most applicable to you. A score of 5 indicates that you agree strongly with the statement, which a score of 1 indicates that you disagree strongly with the statement.</p>
-            <form>
-                <div class="divider"></div>
-                <h3>Personal Information</h3>
-                <div class="form-group">
+            
+         <div class="divider"></div>
+         </div>
+		 <form>
+             <h3>Personal Information</h3>
+              <div class="form-group">
                     <label for="name">Full Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Jane Doe">
-                </div>
+                
                 <div class="form-group">
                     <label for="photo">Photo URL</label>
-                    <input type="text" class="form-control" id="photo" placeholder="http://www.mysite.com/myphoto.jpg">
+                    <input type="text" class="form-control" id="picture" placeholder="http://www.mysite.com/myphoto.jpg">
                 </div>
                 <div class="divider"></div>
 
@@ -116,8 +119,11 @@
                 <label class="radio-inline"><input type="radio" name="q10" value="4">4</label>
                 <label class="radio-inline"><input type="radio" name="q10" value="5">5</label>
             </form>
-            <button type="submit" id="submit">Submit!</button>
-        </div> <!-- survey row -->
+			 </div>
+            <br>
+            <button type="button" id="submit" class="btn-outline-dark btn-lg">Submit!</button>
+	</div>
+         <!-- survey row -->
         <div class="card-footer text-muted">
             <div class="modal fade" id="newfriend" tabindex="-1" role="dialog" aria-labelledby="title">
                 <!-- modal -->
@@ -137,14 +143,14 @@
                         <div class="modal-footer">
                             <!-- footer -->
                             <button class="small" data-dismiss="modal">Close</button>
-                            <a href="/home"><button class="small">Return to Home</button></a>
+                            <a href="../../index.html"><button class="small">Return to Home</button></a>
                         </div> <!-- modal-footer -->
                     </div> <!-- modal-content -->
                 </div> <!-- model-dialog -->
             </div> <!-- modal -->
             <div class="card text-center">
                 <div class="card-header">
-                    <a href="/api/friends">Friends API</a> | <a href="https://github.com/PMatrixMedia/Code-Pen-Express-Friendfinder.git">GitHub</a></p>
+                   <a href="https://us-central1-express-friendfinder.cloudfunctions.net/friends/api">Friends API</a> | <a href="https://github.com/PMatrixMedia/Code-Pen-Express-Friendfinder.git">GitHub</a>
                 </div>
             </div>
             </div>
@@ -189,5 +195,5 @@
                     }
                 });
             </script>
-</body>
+</body>i
 </html>
